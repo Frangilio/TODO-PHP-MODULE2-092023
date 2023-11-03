@@ -44,11 +44,3 @@ function displayItem($item)
     } 
     return $html;
 }
-
-function getItems(){
-    return unserialize(file_get_contents(FILE_NAME));
-}
-
-function saveItems($items){
-    file_put_contents(FILE_NAME, serialize($items));
-}
